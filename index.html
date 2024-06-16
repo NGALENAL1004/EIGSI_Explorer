@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIGSI Explorer</title>
+    <link rel="icon" href="Medias/EIGSI_icon.png">
+    <!--CSS file link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iconify/3.0.1/iconify.min.js">
+    <!--jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <!--Header section starts-->
+    <header>
+        <div class="brand">
+            <div class="brand-logo">
+                <a href="index.html"><img src="Medias/EIGSI_icon.png" alt="#" /></a>
+            </div>
+            <div class="brand-content">
+                <a href="index.html">Explorer </a>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#" id="sous_menu">Vie Étudiante <i class="fas fa-caret-down"></i>
+                    </a>
+                    <ul class="der">
+                        <li><a href="#food">Où manger ?</a></li>
+                        <li><a href="#transportation">Se déplacer</a></li>
+                        <li><a href="#residence">Se loger</a></li>
+                        <li><a href="#leisure">Se divertir</a></li>
+                    </ul>
+                </li>
+                <li><a href="places.html">Découvrir Casablanca</a></li>
+
+                <li><a href="internationaux.html">Étudiants internationaux</a></li>
+
+            </ul>
+        </nav>
+
+        <!--menu-toggle-->
+        <div class="fas fa-bars"></div>
+        <!--fin menu-toggle-->
+    </header>
+    <!--Header section ends-->
+
+    <!--Home section starts-->
+    <section class="home">
+        <div class="slider">
+
+            <div class="slide">
+                <img src="Medias/slider1.jpg" alt="Slide 1">
+                <div class="slide-content">
+                    <div class="word" style="color: #7A074A;">#Engagement</div>
+                    <div class="word" style="color: #06468e;">#Respect</div>
+                    <div class="word-active" style="color: #52AC1C;">#Esprit d'équipe</div>
+                    <div class="word" style="color: #E0A400;">#Innovation</div>
+                    <div class="word" style="color: #a71609;">#Ouverture</div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Medias/slider2.JPG" alt="Slide 2">
+                <div class="slide-content">
+                    <div class="word" style="color: #a71609;">#Ouverture</div>
+                    <div class="word" style="color: #7A074A;">#Engagement</div>
+                    <div class="word-active" style="color: #232E70;"><span>#Respect</span></div>
+                    <div class="word" style="color: #52AC1C;">#Esprit d'équipe</div>
+                    <div class="word" style="color: #E0A400;">#Innovation</div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Medias/slider3.jpg" alt="Slide 3">
+                <div class="slide-content">
+                    <div class="word" style="color: #E0A400;">#Innovation</div>
+                    <div class="word" style="color: #a71609;">#Ouverture</div>
+                    <div class="word-active" style="color: #7A074A;"><span>#Engagement</span></div>
+                    <div class="word" style="color: #232E70;">#Respect</div>
+                    <div class="word" style="color: #52AC1C;">#Esprit d'équipe</div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Medias/slider4.JPG" alt="Slide 4">
+                <div class="slide-content">
+                    <div class="word" style="color: #52AC1C;">#Esprit d'équipe</div>
+                    <div class="word" style="color: #E0A400;">#Innovation</div>
+                    <div class="word-active" style="color: #a71609;"><span>#Ouverture</span></div>
+                    <div class="word" style="color: #7A074A;">#Engagement</div>
+                    <div class="word" style="color: #232E70;">#Respect</div>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="Medias/slider5.jpg" alt="Slide 5">
+                <div class="slide-content">
+                    <div class="word" style="color: #232E70;">#Respect</div>
+                    <div class="word" style="color: #52AC1C;">#Esprit d'équipe</div>
+                    <div class="word-active" style="color: #E0A400;"><span>#Innovation</span></div>
+                    <div class="word" style="color: #a71609;">#Ouverture</div>
+                    <div class="word" style="color: #7A074A;">#Engagement</div>
+                </div>
+            </div>
+
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+
+        </div>
+    </section>
+    <!--Home section ends-->
+
+
+    <!--Presentation section starts-->
+    <section class="about" id="about">
+
+        <h1>Bienvenue sur<br><span>EIGSI Explorer</span></h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="Medias/about.jpg" alt="">
+            </div>
+
+            <div class="content">
+                <h3>EIGSI Explorer</h3>
+                <p>Bienvenue sur EIGSI Explorer, votre guide pour découvrir Casablanca ! <br> Ce site vous aide à profiter au
+                    maximum de votre séjour en vous proposant des bons plans, des recommandations et des informations
+                    pratiques sur la ville. Que vous soyez intéressé par la culture, la gastronomie ou les activités,
+                    vous trouverez tout ce dont vous avez besoin ici.</p>
+                <a href="https://fr.wikipedia.org/wiki/Maroc" target="_blank"><button class="btn">Découvrir le
+                        Maroc</button></a>
+            </div>
+
+        </div>
+
+    </section>
+    <!--Presentation section ends-->
+
+    <!--Food section starts-->
+    <section class="lifestudent1" id="food">
+
+        <h1>Bons plans<br><span>Où manger ?</span></h1>
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/sucresale.jpg" alt="">
+                    </div>
+                    <h3>Sucré Salé</h3>
+                    <p>Restaurant situé près de la gare oasis</p>
+                    <p class="phone"><i class="fas fa-phone"></i> +212 80-8501269</p>
+                    <a target="_blank"
+                        href="https://www.google.com/search?q=caf%C3%A9+sucr%C3%A9+sal%C3%A9+oasis&sxsrf=AB5stBgoD1PLQnXLOFEUtXqSgNZpWiDjNg%3A1688602534135&source=hp&ei=pgemZL3dBf6K9u8P6Jy6qA0&iflsig=AD69kcEAAAAAZKYVtpffm012FN4lmFZSzYFBT-kqldHS&ved=0ahUKEwi9yNjR5vj_AhV-hf0HHWiODtUQ4dUDCAk&uact=5&oq=caf%C3%A9+sucr%C3%A9+sal%C3%A9+oasis&gs_lcp=Cgdnd3Mtd2l6EAMyBggAEBYQHjoLCAAQgAQQsQMQgwE6CwguEIMBELEDEIoFOhEILhCABBCxAxCDARDHARDRAzoLCAAQigUQsQMQgwE6CwguEIoFELEDEIMBOgsILhCABBCxAxCDAToICC4QsQMQgAQ6CAguEIAEELEDOgUILhCABDoLCAAQgAQQsQMQyQM6CAgAEIAEEJIDOggIABCKBRCSAzoFCAAQgAQ6CwguEK8BEMcBEIAEOgsILhCABBDHARCvAToLCC4QgAQQxwEQ0QNQAFjvM2DNNGgAcAB4AIAB0ASIAdkhkgEMMC4xMi4zLjAuMS4zmAEAoAEB&sclient=gws-wiz#">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/rodeo.jpg" alt="">
+                    </div>
+                    <h3>Rodéo</h3>
+                    <p>Restaurant situé près de la gare oasis</p>
+                    <p class="phone"><i class="fas fa-phone"></i> +212 662-112729</p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/LE+RODEO+-+Oasis/@33.5549526,-7.6319302,15z/data=!4m6!3m5!1s0xda62d49ed6d8f1b:0xcb33a4a4bba0612b!8m2!3d33.5549526!4d-7.6319302!16s%2Fg%2F11b6lkp_tg?hl=fr&entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/oasisjuice.jpeg" alt="">
+                    </div>
+                    <h3>Oasis Juice</h3>
+                    <p>Restaurant situé près de la gare oasis</p>
+                    <p class="phone"><i class="fas fa-phone"></i> +212 691-718888</p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Caf%C3%A9+Gare+Oasis/@33.5548784,-7.6319495,21z/data=!4m6!3m5!1s0xda62d97a5ad5237:0x20edb527eaeb1908!8m2!3d33.5548042!4d-7.6316469!16s%2Fg%2F11f8cmmndd?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/amandine.jpg" alt="">
+                    </div>
+                    <h3>Amandine</h3>
+                    <p>Boulangerie située près de BIM store</p>
+                    <p class="phone"><i class="fas fa-phone"></i> +212 522-996565</p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Amandine+P%C3%A2tisserie-Traiteur/@33.5564693,-7.6380615,17z/data=!3m1!4b1!4m6!3m5!1s0xda62d80490f173b:0xf1901b0076c0e961!8m2!3d33.5564649!4d-7.6354866!16s%2Fg%2F11jnwhhwy7?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Food section ends-->
+
+    <!--Transportation section starts-->
+    <section class="lifestudent2" id="transportation">
+
+        <h1>Bons plans<br><span>Se déplacer</span></h1>
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/taxi blanc.jpg" alt="">
+                    </div>
+                    <h3>Taxi blanc</h3>
+                    <p class="description">Moyen de transport fiable et facilement accessible offrant un confort optimal
+                        aux passagers.</p>
+
+
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/petit taxi.jpg" alt="">
+                    </div>
+                    <h3>Petit taxi</h3>
+                    <p class="description">Symbole emblématique de la ville offrant un moyen de transport pratique et
+                        rapide aux habitants.</p>
+
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/tramway.jpg" alt="">
+                    </div>
+                    <h3>Tramway</h3>
+                    <p class="description">Système de transport en commun moderne et écologique reliant différents
+                        quartiers de la ville.</p>
+
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/bus.jpg" alt="">
+                    </div>
+                    <h3>Bus</h3>
+                    <p class="description">Solution abordable et pratique pour se déplacer d'un quartier à l'autre,
+                        ainsi que vers les zones périphérique.</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--Transportation section ends-->
+
+    <!--Residence section starts-->
+    <section class="lifestudent3" id="residence">
+
+        <h1>Bons plans<br><span>Se loger</span></h1>
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/maison-sofya.jpg" alt="">
+                    </div>
+                    <h3>La maison Sofya</h3>
+                    <p><i class="fas fa-phone"></i> +212 668-712013</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 14 lotissement du parc, Bd Anoual, Casablanca 20153
+                    </p>
+                    <p><i class="fas fa-globe"></i><a class="site" href="http://lamaisonsofya.ma/" target="_blank">
+                            lamaisonsofya.ma</a>
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/La+maison+sofya/@33.5678006,-7.6143746,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d3761a957a5d:0x49349dcb5fdc1dc1!8m2!3d33.5677962!4d-7.6117997!16s%2Fg%2F11s2ps8_tm?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/Résidence-Gare-Oasis.jpg" alt="">
+                    </div>
+                    <h3>Résidence gare oasis</h3>
+                    <p><i class="fas fa-phone"></i> +212 522-259850</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Angle rues Bir Hakim et Jules Zannier, route de l’oasis,
+                        Casablanca
+                    </p>
+                    <p><i class="fas fa-globe"></i><a class="site"
+                            href="https://jamiati.ma/fr/loge-etudes-residence-etudiants" target="_blank"> jamiati.ma</a>
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/R%C3%A9sidence+%C3%A9tudiante+Gare+Oasis/@33.5501493,-7.6383941,17z/data=!3m1!4b1!4m6!3m5!1s0xda62d3a22d0aa89:0x8d56ba8ee4773d67!8m2!3d33.5501449!4d-7.6358192!16s%2Fg%2F1hg4rwybx?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/bayt-al-maarifa.jpeg" alt="">
+                    </div>
+                    <h3>Bayt Al Mâarifa</h3>
+                    <p><i class="fas fa-phone"></i> +212 661-084983</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Dyar Al Maarifa Route El jadida,<br> Casablanca
+                    </p>
+                    <p><i class="fas fa-globe"></i><a class="site" href="http://baytalmaarifa.ma/" target="_blank">
+                            baytalmaarifa.ma</a>
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Bayt+Al+maarifa/@33.5409244,-7.6616009,17z/data=!3m1!4b1!4m6!3m5!1s0xda62cde930205e3:0xbc024b8ca2f0e456!8m2!3d33.54092!4d-7.659026!16s%2Fg%2F12ml2l99_?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/ziraoui.jpg" alt="">
+                    </div>
+                    <h3>Résidence Ziraoui</h3>
+                    <p><i class="fas fa-phone"></i> +212 602-682346</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Lycée Maïmonide, Rue Indochine, Casablanca 20250
+                    </p>
+                    <p><i class="fas fa-globe"></i><a class="site" href="http://www.resu.ma/" target="_blank">
+                            resu.ma</a>
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Residence+Ziraoui/@33.5959965,-7.6354762,17z/data=!4m15!1m8!3m7!1s0xda7d2f2ca5355bf:0xa42b53dc239ddd1e!2sResidence+Ziraoui!8m2!3d33.5959965!4d-7.6332875!10e5!16s%2Fg%2F11cs2wc2_3!3m5!1s0xda7d2f2ca5355bf:0xa42b53dc239ddd1e!8m2!3d33.5959965!4d-7.6332875!16s%2Fg%2F11cs2wc2_3?entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+            </div>
+
+            <a href="residence.html"><button class="btn">Découvrir</button></a>
+
+        </div>
+
+    </section>
+    <!--Residence section ends-->
+
+    <!--Leisure section starts-->
+    <section class="lifestudent4" id="leisure">
+
+        <h1>Bons plans<br><span>Se divertir</span></h1>
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/cityfoot.jpg" alt="">
+                    </div>
+                    <h3>City Foot</h3>
+                    <p>Club de football<br>situé à Casablanca</p>
+                    <p><i class="fas fa-phone"></i> +212 5229-94498</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Route de l'Oasis, Casablanca
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/City+Foot+5/@33.5499724,-7.6389279,17z/data=!3m1!4b1!4m6!3m5!1s0xda62d49db4f37b5:0x7ff481f78b8807b2!8m2!3d33.549968!4d-7.636353!16s%2Fg%2F11b7fs_y8t?hl=fr&entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/megarama.jpeg" alt="">
+                    </div>
+                    <h3>Cinéma Mégarama</h3>
+                    <p>Cinéma proposant des séances de films et des spectacles.</p>
+                    <p><i class="fas fa-phone"></i> +212 522-798888</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard de la Corniche, Casablanca 20100
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Cin%C3%A9ma+Megarama/@33.5959751,-7.6707342,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d306eef8cf9f:0xd849a9c0cb2ff2b0!8m2!3d33.5959707!4d-7.6681593!16s%2Fg%2F11b6jgsg4k?hl=fr&entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/parc-ligue-arabe.jpg" alt="">
+                    </div>
+                    <h3>Parc de la ligue arabe</h3>
+                    <p>Parc public <br>situé à Casablanca</p>
+                    <p><i class="fas fa-clock"></i> Ferme à 21 heures</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Boulevard Moulay Youssef, Casablanca 20250
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Parc+de+la+Ligue+Arabe/@33.5892061,-7.6262913,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d2971cfc80fb:0x66b14a23a840c3a3!8m2!3d33.5892017!4d-7.6237164!16s%2Fm%2F0j6l1lw?hl=fr&entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+                <div class="box">
+                    <div class="image">
+                        <img src="Medias/royale-equestre.jpg" alt="">
+                    </div>
+                    <h3> Royal Club Equestre Anfa</h3>
+                    <p>Centre d'équitation <br> situé à Casablanca</p>
+                    <p><i class="fas fa-clock"></i> Ferme à 19 heures</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Route Sidi Abderrahmane, Casablanca
+                    </p>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/place/Royal+Club+Equestre+Anfa+Casablanca/@33.5737017,-7.7004075,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d4a0b085d5a3:0x5e38679e5dfbb2b!8m2!3d33.5736973!4d-7.6978326!16s%2Fg%2F11f2ds8p1c?hl=fr&entry=ttu">Voir
+                        sur la carte</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    <!--Leisure section ends-->
+
+    <!--Places section starts-->
+    <section class="places" id="places">
+
+        <h1>Bons plans<br><span>Lieux clés de Casablanca</span></h1>
+
+        <div class="container">
+
+            <div class="content1">
+
+                <div class="box">
+                    <img src="Medias/ancienne-medina.jpg">
+                    <div class="content">
+                        <h3>Ancienne Médina</h3>
+                        <a href="https://www.google.com/maps/place/Ancienne+Medina,+Casablanca+20250/@33.6014215,-7.6256781,16z/data=!4m6!3m5!1s0xda7d2842753b1cf:0xd872188d7a277139!8m2!3d33.6022285!4d-7.6209108!16s%2Fg%2F1yl57j921?entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#medina"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/anfa-park.jpeg">
+                    <div class="content">
+                        <h3>Anfa Park</h3>
+                        <a href="https://www.google.com/maps/place/Anfa+Park/@33.5634439,-7.6617891,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d3cdbc754245:0xed1dc3e38894f13c!8m2!3d33.5634395!4d-7.6571757!16s%2Fg%2F11gvy0z_nj?entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#anfapark"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/anfa-place.jpg">
+                    <div class="content">
+                        <h3>Anfa Place</h3>
+                        <a href="https://www.google.com/maps/place/ANFAPLACE+MALL/@33.5981334,-7.6672103,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d306041585e7:0xb91ed398330cf3cd!8m2!3d33.598129!4d-7.6646354!16s%2Fg%2F11c3ymwqb6?entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#anfaplace"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/hassan2.jpg">
+                    <div class="content">
+                        <h3>Mosquée Hassan II</h3>
+                        <a href="https://www.google.com/maps/place/Mosqu%C3%A9e+Hassan-II/@33.6082273,-7.6352429,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d2607994d58f:0x67a1d618e7b0d072!8m2!3d33.6082229!4d-7.632668!16zL20vMDQzNjds?authuser=0&entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#hassan2"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/marina-mall.jpg">
+                    <div class="content">
+                        <h3>Marina Mall</h3>
+                        <a href="https://www.google.com/maps/place/Marina+Shopping/@33.6072195,-7.6243467,16.21z/data=!4m6!3m5!1s0xda7d3e21f223b99:0xfa17bca4023bdc87!8m2!3d33.6069868!4d-7.6210527!16s%2Fg%2F11gy360x1h?entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#marinamall"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/morocco mall.jpg">
+                    <div class="content">
+                        <h3>Morocco Mall</h3>
+                        <a href="https://www.google.com/maps/place/Morocco+Mall/@33.5758998,-7.7093959,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d4a33900f835:0xb540923b5bdf10fb!8m2!3d33.5758954!4d-7.706821!16s%2Fm%2F0hn9dtt?entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#moroccomall"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/place-nations-unis.jpg">
+                    <div class="content">
+                        <h3>Place des Nations-Unis</h3>
+                        <a href="https://www.google.com/maps/place/Place+des+Nations-Unies/@33.5948172,-7.6213464,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d284a5a0e849:0xb2dffc40c39b06c7!8m2!3d33.5948128!4d-7.6187715!16s%2Fg%2F11f6158mls?authuser=0&entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#nationsunis"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/plage-ain-diab.jpg">
+                    <div class="content">
+                        <h3>Plage Ain-Diab</h3>
+                        <a href="https://www.google.com/maps/place/Plage+A%C3%AFn+Diab/@33.585919,-7.7022314,15z/data=!3m1!4b1!4m6!3m5!1s0xda7d36410f1dd73:0x9c80c4434326b442!8m2!3d33.5861628!4d-7.6894061!16s%2Fg%2F1td0c8yh?authuser=0&entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#aindiab"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="Medias/stade-mohammed-5.jpg">
+                    <div class="content">
+                        <h3>Stade Mohammed V</h3>
+                        <a href="https://www.google.com/maps/place/Stade+Mohammed+V/@33.5826411,-7.6497224,17z/data=!3m1!4b1!4m6!3m5!1s0xda7d2e77f3d8aaf:0x9169b10a83e53ab!8m2!3d33.5826367!4d-7.6471475!16zL20vMDZmNzgy?authuser=0&entry=ttu"
+                            target="_blank">Voir sur la carte</a><br>
+                        <a href="places.html#mohammed5"><button class="btn">Découvrir</button></a>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <a href="places.html"><button class="btn2">Découvrir</button></a>
+
+        </div>
+
+
+    </section>
+    <!--Places section ends-->
+
+    <!--Footer section starts-->
+    <section class="footer" id="footer">
+
+        <div class="container">
+
+            <div class="box">
+                <h3 class="title">Ecole d'Ingénieurs<br> Généralistes<br>
+                    Casablanca</h3>
+                <p class="place">EIGSI<br>
+                    282 Route de l'Oasis<br>
+                    20410 Casablanca</p>
+            </div>
+
+            <div class="box">
+
+                <h3>Liens</h3>
+
+                <a href="#food">Se nourrir</a>
+                <a href="#residence">Se loger</a>
+                <a href="#transportation">Se déplacer</a>
+                <a href="#leisure">Se divertir</a>
+                <a href="#places">Découvrir Casablanca</a>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Contacts administrations</h3>
+
+                <div class="info">
+                    <p class="name">Madame Awatif SAGHIR</p>
+                    <p class="role">Directrice pédagogique adjointe<br> et coordinatrice de la 3éme année</p>
+                    <a href="mailto:awatif.saghir@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> awatif.saghir@eigsica.ma</a>
+                </div>
+
+                <div class="info">
+                    <p class="name">Madame Houda EL HADAF</p>
+                    <p class="role">Coordinatrice de la 2ème année</p>
+                    <a href="mailto:houda.elhadaf@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> houda.elhadaf@eigsica.ma</a>
+                </div>
+
+                <div class="info">
+                    <p class="name">Monsieur Tarik BOURAGBA</p>
+                    <p class="role">Coordinateur de la 1ère année</p>
+                    <a href="mailto:tarik.bouragba@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> tarik.bouragba@eigsica.ma</a>
+                </div>
+
+            </div>
+
+            <div class="box">
+
+                <h3>Contacts étudiants</h3>
+
+                <div class="info">
+                    <p class="name">Darus EFFAGHE</p>
+                    <p class="role">Président du BDE</p>
+                    <a href="mailto:dw.effague.25@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> dw.effague.25@eigsica.ma</a>
+                </div>
+
+                <div class="info">
+                    <p class="name">Richard OBIANG</p>
+                    <p class="role">Président du BDS </p>
+                    <a href="mailto:no.richard.27@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> no.richard.27@eigsica.ma</a>
+                </div>
+
+                <div class="info">
+                    <p class="name">Picasso GOUNADON</p>
+                    <p class="role">Président du BDA</p>
+                    <a href="mailto:psplm.gounadon.26@eigsica.ma" class="contact"><i class="fas fa-envelope"></i> psplm.gounadon.26@eigsica.ma</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="credits">
+            <h2>Développé par <a href="https://almidev.org"> <span>AlMiDEV</span></a> | Tous droits réservés
+                © <span>2024</span></h2>
+        </div>
+
+    </section>
+    <!--Footer section ends-->
+
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!--JS file link-->
+    <script src="script.js"></script>
+</body>
+
+</html>

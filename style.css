@@ -1,0 +1,1246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+:root{
+    --green:#027014;
+    --white:#fff;
+    --greenlight:#52AC1C;
+    --greenlight2: #a4c414;
+    --blue: #232E70;
+    --bluelight:#0A34A0;
+    --bluelight2:#06468e;
+    --pink:#7A074A;
+    --pinklight:#F1008D;
+    --yellow:#E0A400;
+    --yellowlight:#FCC900;
+    --red:#a71609;
+    --redlight:#f01b08;
+    --transparent:#0000002e;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    transition: all .1s linear;
+    margin: 0; padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 1rem;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: 200;
+    padding-top: 3rem;
+}
+
+h1 span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.banner{
+    height: 60rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .content {
+    position: absolute;
+    top: 30%; 
+    transform: translateY(30%);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.banner .content h1{
+    font-size: 8rem;
+    font-weight: bold;
+    color: var(--yellow)
+}
+
+.banner .content h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--white);
+    text-align: center;
+}
+
+/*Header section style*/
+header {
+    position: fixed !important;
+    top: 0;
+    left: 0; right: 0;
+    width: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    padding: 0 3rem;   
+}
+  
+header .brand {
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+header .brand img{
+    height:4rem ;
+}
+  
+header .brand-content a {
+    color: var(--white);
+}
+  
+header .navbar ul{
+    list-style: none;
+}
+  
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 2rem;
+    display: block;
+}
+
+header .navbar ul li a:hover{
+    background: var(--greenlight2);
+    color: white;
+}  
+  
+header .navbar ul li ul{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: var(--bluelight2);
+    display: none;
+}
+
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+header .navbar ul li:hover ul{
+    display: initial;
+}
+
+header.header-active{
+    background:#fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
+}
+
+header.header-active .navbar ul li ul a{
+    color:var(--white);
+}
+
+header.header-active .fa-bars{
+    color: #333;
+}
+
+header.header-active .brand-content a{
+    color:#333;
+}
+
+header.header-active .navbar a{
+    color:#333;
+}
+
+header.header-ei .fa-bars{
+    color: #333;
+}
+
+header.header-ei .brand-content a{
+    color:#333;
+}
+
+header.header-ei .navbar a{
+    color:#333;
+}
+
+header.header-ei .navbar ul li ul a{
+    color:var(--white);
+}
+
+header .fa-bars{
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    display:none; 
+}
+
+/*Home section style*/
+.home .slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.home .slider .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+}
+
+.home .slider .slide.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.home .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home .slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.home .slide-content {
+    position: absolute;
+    top:20%;
+    left: 10%;
+    text-align: left;
+    color: var(--bluelight);
+    transition: top 0.8s ease-in-out;
+}
+
+.slide-content.animate-up {
+    top: 20rem;
+}
+
+.slide-content .word {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.slide-content .word-active{
+    padding-left: 5rem;
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.slide-content p {
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.prev,
+.next {
+    position: absolute;
+    bottom: .0rem;
+    background: var(--bluelight);
+    padding: 1rem 3rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.prev {
+    left: .0rem;
+    font-size: 5rem;
+}
+
+.next {
+    right: .0rem;
+    font-size: 5rem;
+}
+
+/*About section style*/
+.about{
+    background: #fff;
+}
+
+.about h1{
+    color: var(--green);
+}
+
+.about h1 span{
+    color: var(--green);
+}
+
+.about .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5rem 2rem;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30rem;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    padding: 2rem;
+}
+
+.about .content h3{
+    color: var(--green);
+    font-size: 4rem;
+}
+
+.about .content p{
+    color: var(--grey);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.about .row .content button{
+    background: none;
+    border: .2rem solid var(--green);
+    width: 20rem;
+    height: 4rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    color: var(--green);
+    font-size: 2rem;
+}
+
+.about .row .content button:hover{
+    background: var(--green);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+
+/*Food Section Style*/
+.lifestudent1{
+    background: var(--green);
+}
+
+.lifestudent1 .container{
+    padding: 2rem 0;
+}
+
+.lifestudent1 .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lifestudent1 .container .content .box{
+    width: 32rem;
+    height: 40rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: .5rem;
+}
+
+.lifestudent1 .container .content .box .image{
+    overflow: hidden;
+    margin: 3rem 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: .4rem solid var(--greenlight);  
+}
+
+.lifestudent1 .container .content .box:hover .image{
+    cursor: pointer;
+    overflow: hidden;
+	transform: scale(1.1); 
+    transition: all .2s linear;
+}
+
+.lifestudent1 .container .content .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lifestudent1 .container .content .box h3{
+    font-size: 2rem;
+    color: var(--green);
+    margin: 1rem 0;
+}
+
+.lifestudent1 .container .content .box p{
+    font-size: 1.4rem;
+    margin: .5rem;
+}
+
+.lifestudent1 .container .content .box .phone{
+    font-size: 1.4rem;
+    margin: .5rem;
+}
+
+.lifestudent1 .container .content .box a{
+    font-size: 2rem;
+    color: var(--green);
+    margin: 0 8rem;
+}
+
+.lifestudent1 .container .content .box a:hover{
+    border-bottom: .1rem solid var(--green);
+}
+
+
+/*Transportation Section Style*/
+.lifestudent2{
+    background: var(--blue);
+}
+
+.lifestudent2 .container{
+    padding: 2rem 0;
+}
+
+.lifestudent2 .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lifestudent2 .container .content .box{
+    width: 32rem;
+    height: 40rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: .5rem;
+}
+
+.lifestudent2 .container .content .box .image{
+    overflow: hidden;
+    margin: 3rem 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: .4rem solid var(--bluelight);  
+}
+
+.lifestudent2 .container .content .box:hover .image{
+    cursor: pointer;
+    overflow: hidden;
+	transform: scale(1.1); 
+    transition: all .2s linear;
+}
+
+.lifestudent2 .container .content .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lifestudent2 .container .content .box h3{
+    font-size: 2rem;
+    color: var(--blue);
+    margin: 1rem 0;
+}
+
+.lifestudent2 .container .content .box p{
+    font-size: 1.4rem;
+    margin: .5rem;
+}
+
+
+/*Résidence Section Style*/
+.lifestudent3{
+    background: var(--yellow);
+}
+
+.lifestudent3 .btn{
+    background: none;
+    border: .2rem solid var(--white);
+    width: 15rem;
+    height: 4rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    
+}
+
+.lifestudent3 .btn:hover{
+    background: var(--white);
+    border: .2rem solid var(--yellow);
+    cursor: pointer;
+    color: var(--yellow);
+ }
+
+.lifestudent3 .container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lifestudent3 .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lifestudent3 .container .content .box{
+    width: 32rem;
+    height: 40rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: .5rem;
+}
+
+.lifestudent3 .container .content .box .image{
+    overflow: hidden;
+    margin: 3rem 0;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: .4rem solid var(--yellowlight);  
+}
+
+.lifestudent3 .container .content .box:hover .image{
+    cursor: pointer;
+    overflow: hidden;
+	transform: scale(1.1); 
+    transition: all .2s linear;
+}
+
+.lifestudent3 .container .content .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lifestudent3 .container .content .box h3{
+    font-size: 1.8rem;
+    color: var(--yellow)
+}
+
+.lifestudent3 .container .content .box p{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+
+.lifestudent3 .container .content .box .site{
+    font-size: 1.2rem;
+    color: var(--yellow);
+}
+
+.lifestudent3 .container .content .box a{
+    font-size: 1.8rem;
+    color: var(--yellow);
+}
+
+.lifestudent3 .container .content .box a:hover{
+    border-bottom: .1rem solid var(--yellow);
+}
+
+/*Residence Page Style*/
+.residence-page h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--yellow);
+    font-weight: 200;
+    padding-top: 2rem;
+ }
+
+ .residence-page h1 span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--yellow);
+    font-weight: bold;
+    border-bottom: .1rem solid var(--yellow);
+}
+
+.residence-page .container{
+    padding: 5rem 2rem;
+}
+
+.residence-page .content .row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2rem;
+}
+
+.residence-page .content .row .image{
+    margin: 1rem 2rem;
+	width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.residence-page .content .row .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: .2rem solid var(--yellow);
+    object-fit: cover;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.residence-page .content .row .info{
+    margin: 1rem 2rem;
+}
+
+.residence-page .content .row .info h3{
+    font-size: 2.5rem;
+    color: var(--yellow);
+    text-decoration: underline;
+    padding-bottom: 2rem;
+}
+
+.residence-page .content .row .info p{
+    font-size: 1.8rem;
+    margin: .2rem 0;
+}
+
+.residence-page .content .row .info p a{
+    color: black;
+}
+
+.residence-page .content .row .info p a:hover{
+    color:var(--yellow);
+    text-decoration: underline;
+}
+
+.residence-page .content .row .info .maps{
+    margin-top: 2rem;
+}
+
+.residence-page .content .row .info .maps a{
+    color: var(--yellow);
+}
+
+.residence-page .content .info2 p{
+    margin: 4rem;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.residence-page .content .img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+}
+
+.residence-page .content .img img{
+    width: 35rem;
+    height: 30rem;
+    margin: 2rem;
+    box-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+
+.residence-page .content .img img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 1rem .5rem rgba(0, 0, 0, .3);
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+/*Leisure Section Style*/
+.lifestudent4{
+    background: var(--pink);
+}
+
+.lifestudent4 .container{
+    padding: 2rem;
+}
+
+.lifestudent4 .container .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.lifestudent4 .container .content .box{
+    width: 32rem;
+    height: 40rem;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: .5rem;
+}
+
+.lifestudent4 .container .content .box .image{
+    overflow: hidden;
+	margin: 3rem 6rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    border: .4rem solid var(--pinklight);  
+}
+
+.lifestudent4 .container .content .box:hover .image{
+    cursor: pointer;
+    overflow: hidden;
+	transform: scale(1.1); 
+    transition: all .2s linear;
+}
+
+.lifestudent4 .container .content .box .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lifestudent4 .container .content .box h3{
+    font-size: 2rem;
+    color: var(--pink)
+}
+
+.lifestudent4 .container .content .box p{
+    font-size: 1.2rem;
+    margin: .5rem;
+}
+
+.lifestudent4 .container .content .box .site{
+    font-size: 1.2rem;
+    color: var(--pink);
+}
+
+.lifestudent4 .container .content .box a{
+    font-size: 1.8rem;
+    color: var(--pink);
+}
+
+.lifestudent4 .container .content .box a:hover{
+    border-bottom: .1rem solid var(--pink);
+}
+
+
+/*Paces Section Style*/
+.places{
+    background: var(--red);
+}
+
+.places .container{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.places .content1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.places .content1 .box{
+    height: 35rem;
+    width: 40rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: .5rem solid var(--white);
+    overflow: hidden;
+    border-radius: .5rem;
+    position: relative;
+}
+
+.places .content1 .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.places .content1 .box .content{
+    bottom: -100%; left: 0;
+    position: absolute;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    background:rgba(0,0,0,.7);
+    padding:2rem;
+    padding-top: 10rem;
+}
+
+.places .content1 .box:hover .content{
+    bottom:0;
+}
+
+.places .content1 .box .content h3{
+    font-size: 2.5rem;
+    color:var(--white);
+}
+
+.places .content1 .box .content a{
+    font-size: 1.7rem;
+    color: var(--white);
+}
+
+.places .content1 .box .content a:hover{
+    color: var(--redlight);
+    text-decoration: underline;
+}
+
+.places .content1 .box .content button{
+    background: none;
+    border: .2rem solid var(--white);
+    width: 15rem;
+    height: 4rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.places .content1 .box .content button:hover{
+    background: var(--redlight);
+    border: .2rem solid var(--white);
+    width: 15rem;
+    height: 4rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.places .btn2{
+    background: none;
+    border: .2rem solid var(--white);
+    width: 15rem;
+    height: 4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    
+}
+
+.places .btn2:hover{
+    background: var(--white);
+    border: .2rem solid var(--red);
+    cursor: pointer;
+    color: var(--red);
+ }
+
+
+ /*Places Page Style*/
+ .places-page h1{
+    font-size: 2rem;
+    text-align: center;
+    color: var(--red);
+    font-weight: 200;
+    padding-top: 2rem;
+ }
+
+ .places-page h1 span{
+    font-size: 3.5rem;
+    text-align: center;
+    color: var(--red);
+    font-weight: bold;
+    border-bottom: .1rem solid var(--red);
+}
+
+.places-page .container{
+    padding: 5rem 1rem;
+}
+
+.places-page .container .row{
+    margin: 2rem 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.places-page .container .row .image{
+    margin: 1rem;
+    position: relative;
+	width: 90rem;
+    height: 35rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border: .5rem solid var(--white);
+    overflow: hidden;
+}
+
+.places-page .container .row .image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.places-page .container .row .info{
+    width: 100rem;
+    margin: 2rem;
+}
+
+.places-page .container .row .info h3{
+    font-size: 2.5rem;
+    color: var(--red);
+    text-decoration: underline;
+}
+
+.places-page .container .row .info p{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.places-page .container .row .info a{
+    font-size: 2rem;
+    color: var(--red);
+    margin-top: 5rem;
+}
+
+.places-page .container .row .info a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/*Footer Section Style*/
+.footer{
+    background: #263286;
+}
+
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.footer .container .box{
+    padding:1rem 0;
+}
+
+.footer .container .box h3{
+    font-size: 2.2rem;
+    padding:.7rem 0;
+    color:#fff;
+    margin-bottom: 1rem;
+}
+
+.footer .container .box .title{
+    font-size: 2rem;
+    padding:.7rem 0;
+    color:#6EBD8F;
+    margin-bottom: 1rem;
+}
+
+.footer .container .box .place{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#ccc;
+    line-height: 2;
+}
+
+.footer .container .box a{
+    display: block;
+    padding: .3rem 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.footer .container .box a:hover{
+    display: block;
+    color: #6EBD8F;
+    text-decoration: underline;
+}
+
+.footer .container .box .info .name{
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+.footer .container .box .info .role{
+    color:#ccc;
+    font-size: 1.5rem;
+}
+
+.footer .container .box .info .contact{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer .credits{
+    text-align: center;
+    font-size: 1rem;
+    border-top: .2rem solid var(--white);
+    color: white;
+    padding: 1rem;
+}
+
+.footer .credits span{
+    color: #6EBD8F;
+}
+
+
+
+/*Media quieries*/
+@media (max-width:1070px){
+
+    header .navbar ul li a{
+        font-size: 1.8rem;
+        padding: 1.8rem;
+    }
+
+    .footer .container{
+        padding: 3rem 20rem;
+    }
+
+    .footer .container .box:nth-of-type(2){
+        width: 26rem;
+    }
+}
+
+@media (max-width:980px){
+
+    html{
+        font-size: 55%
+    }
+
+    header .brand {
+        font-size: 2rem;
+    }
+    
+    header .brand img{
+        height:4rem ;
+    }
+
+    header .navbar ul li a{
+        padding: 1.8rem;
+    }
+
+}
+
+@media (max-width:880px){
+
+    header ul li a{
+        font-size: 1.8rem;
+    }
+
+    header .fa-bars{
+        display: block;
+    }
+
+    .fa-times{
+        transform: rotate(180deg);
+    }
+
+    header.header-active .fa-bars{
+        color: #333;
+    }
+    
+
+    header{
+        padding: 1rem 4rem;
+    }
+
+    header .navbar{
+        position: absolute;
+        top: -100rem; left: 0;
+        background: var(--transparent);
+        width: 100%;
+        border-top: .1rem solid #ccc;
+    }
+
+    header.header-active .navbar{
+        background: var(--white);
+    }
+
+    header .navbar ul li{
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li ul{
+        position: relative;
+    }
+
+    header .navbar ul li ul li{
+        background: var(--bluelight2);
+    }
+
+    header .nav-toggle{
+        top:100%;
+        opacity: 1;
+    }
+      
+    .home .slide-content {
+        top:40%;
+        left: 10%;
+    }
+
+    .slide-content .word {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .slide-content .word-active{
+        padding-left: 4rem;
+        font-size: 7rem;
+    }
+
+}
+
+@media (max-width:870px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .footer .container{
+        padding: 3rem 15rem;
+    }
+
+}
+
+@media (max-width:720px){
+    
+    html{
+        font-size: 45%;
+    }
+
+    .places-page .container .row{
+        margin: 2rem 2rem;
+        flex-wrap: wrap;
+    }
+
+    .places-page .container .row:nth-of-type(2){
+        flex-wrap: wrap-reverse;
+    }
+
+    .places-page .container .row:nth-of-type(4){
+        flex-wrap: wrap-reverse;
+    }
+
+    .places-page .container .row:nth-of-type(6){
+        flex-wrap: wrap-reverse;
+    }
+
+    .places-page .container .row:nth-of-type(8){
+        flex-wrap: wrap-reverse;
+    }
+
+    .slide-content .word {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+    }
+    
+    .slide-content .word-active{
+        padding-left: 4rem;
+        font-size: 6rem;
+    }
+
+    .footer .container{
+        padding: 3rem 12rem;
+    }
+
+}
+
+@media (max-width:600px){
+
+    .footer .container{
+        padding: 3rem 5rem;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .slide-content .word {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    
+    .slide-content .word-active{
+        padding-left: 4rem;
+        font-size: 4rem;
+    }
+
+    .footer .container{
+        padding: 3rem 3rem;
+        padding-right: 20rem;
+    }
+
+    .footer .container{
+        justify-content: start;
+    }
+
+}
