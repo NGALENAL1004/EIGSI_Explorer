@@ -14,6 +14,7 @@
     --yellowlight:#FCC900;
     --red:#a71609;
     --redlight:#f01b08;
+    --steelblue:#5A94c1;
     --transparent:#0000002e;
 }
 
@@ -204,6 +205,11 @@ header.header-ei .navbar a{
 
 header.header-ei .navbar ul li ul a{
     color:var(--white);
+}
+
+header.header-ei-active{
+    background:#fff;
+    box-shadow: 0 .1rem .3rem rgba(0,0,0,.3);
 }
 
 header .fa-bars{
@@ -1051,8 +1057,249 @@ header .fa-bars{
 }
 
 
+/*Student page style*/
+.home-student .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+}
+
+.home-student .row .image{
+    flex: 1 1 40rem;
+}
+
+.home-student .row .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.home-student .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.home-student .row .content h1{
+    font-size: 5rem;
+    color: var(--steelblue);
+    font-weight: bold;
+}
+
+.home-student .row .content p{
+    font-size: 3rem;
+    color: #333;
+}
+
+.home-student .row .content .btn{
+    display: inline-block;
+    margin-top: 5rem;
+    padding:1rem 3.5rem;
+    font-size: 1.8rem;
+    color: var(--steelblue);
+    border: .2rem solid var(--steelblue);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.home-student .row .content .btn:hover{
+    background: var(--steelblue);
+    color: var(--white);
+}
+
+.about-student{
+    padding: 2rem 5rem;
+}
+
+.about-student h1{
+    color: var(--steelblue);
+}
+
+.about-student h1 span{
+    color: var(--steelblue);
+}
+
+.about-student .row{
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about-student .row .image{
+    flex: 1 1 40rem;
+}
+
+.about-student .row .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-student .row .content{
+    flex: 1 1 40rem;
+    padding: 0 2rem;
+}
+
+.about-student p{
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    padding-top: 3rem;
+}
+
+.general-provision{
+    padding: 2rem 5rem;
+}
+
+.general-provision h1 span{
+    color: var(--steelblue);
+}
+
+.general-provision p{
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    padding-top: 3rem;
+}
+
+.dropdown-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.dropdown{
+    width: 120rem;
+}
+
+.dropdown details{
+    padding-top: 2rem;
+}
+
+.dropdown details summary{
+    font-size: 3.5rem;
+    background: #eee;
+    color: var(--steelblue);
+    padding: 1.5rem 2rem;
+    border: .3rem solid var(--steelblue);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+}
+
+.dropdown details summary::after {
+    content: '\f0da'; 
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 3.5rem;
+    color: var(--steelblue);
+    transition: .2s linear;
+}
+
+
+.dropdown details[open] summary::after{
+    transform: rotate(90deg);
+}
+
+.dropdown details .content{
+    background:#eee;
+    padding: 1rem 2rem;
+}
+
+.dropdown details .content p{
+    font-size: 2rem;
+}
+.dropdown details .content ul{
+    padding-top: 2rem;
+}
+
+.dropdown details .content ul li{
+    font-size: 1.5rem;
+    list-style-type:circle;
+}
+
+.special-provision{
+    padding: 2rem 5rem;
+}
+
+.special-provision h1 span{
+    color: var(--steelblue);
+}
+
+.special-provision p{
+    font-size: 2rem;
+    color: #333;
+    text-align: justify;
+    padding-top: 3rem;
+}
+
+.special-provision .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.special-provision .box-container .box{
+    height:25rem;
+    margin:2rem 2rem;
+    width:35rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 .3rem .5rem #000;
+}
+
+.special-provision .box-container .box img{
+    height:80%;
+    width: 100%;
+    object-fit:fill;
+}
+
+.special-provision .box-container .box .info a{
+    background:#eee;
+    position: absolute;
+    text-align: center;
+    bottom: 0rem; left: 0;
+    color: var(--steelblue);
+    font-size: 2rem;
+    font-weight: bold;
+    width:100%;
+    padding:1.5rem 0;
+}
+
+.special-provision .box-container .box .info a:hover{
+    transform: scale(1.1);
+}
+
 
 /*Media quieries*/
+@media (max-width:1250px){
+    .home-student .row .content h1{
+        font-size: 3.5rem;
+    }
+    
+    .home-student .row .content p{
+        font-size: 2.5rem;
+    }
+
+    .home-student .row .content .btn{
+        margin-top: 3rem;
+        padding:.8rem 3.5rem;
+        font-size: 1.8rem;
+    }
+
+    .about-student p{
+        font-size: 1.5rem;
+    }
+}
+
 @media (max-width:1070px){
 
     header .navbar ul li a{
@@ -1107,7 +1354,6 @@ header .fa-bars{
         color: #333;
     }
     
-
     header{
         padding: 1rem 4rem;
     }
@@ -1164,11 +1410,30 @@ header .fa-bars{
     html{
         font-size: 50%;
     }
+ 
+    .home-student .row .image{
+        flex: 1 1 60rem;
+    }
 
+    .home-student .row .content h1{
+        font-size: 5rem;
+    }
+    
+    .home-student .row .content p{
+       font-size: 3rem;
+    }
+
+    .about-student .row .image{
+        flex: 1 1 60rem;
+    }
+
+    .about-student .row .content p{
+        font-size: 2.5rem;
+    }
+   
     .footer .container{
         padding: 3rem 15rem;
     }
-
 }
 
 @media (max-width:720px){
@@ -1241,6 +1506,10 @@ header .fa-bars{
 
     .footer .container{
         justify-content: start;
+    }
+
+    .dropdown details summary{
+        font-size: 2.5rem;
     }
 
 }
