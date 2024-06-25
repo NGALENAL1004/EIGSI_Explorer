@@ -977,86 +977,6 @@ header .fa-bars{
 }
 
 
-/*Footer Section Style*/
-.footer{
-    background: #263286;
-}
-
-.footer .container{
-    display: flex;
-    flex-wrap: wrap;
-    gap:1.5rem;
-    padding: 3rem;
-    justify-content: space-between;
-}
-
-.footer .container .box{
-    padding:1rem 0;
-}
-
-.footer .container .box h3{
-    font-size: 2.2rem;
-    padding:.7rem 0;
-    color:#fff;
-    margin-bottom: 1rem;
-}
-
-.footer .container .box .title{
-    font-size: 2rem;
-    padding:.7rem 0;
-    color:#6EBD8F;
-    margin-bottom: 1rem;
-}
-
-.footer .container .box .place{
-    font-size: 1.5rem;
-    padding:.7rem 0;
-    color:#ccc;
-    line-height: 2;
-}
-
-.footer .container .box a{
-    display: block;
-    padding: .3rem 0;
-    font-size: 1.8rem;
-    color: white;
-}
-
-.footer .container .box a:hover{
-    display: block;
-    color: #6EBD8F;
-    text-decoration: underline;
-}
-
-.footer .container .box .info .name{
-    color:#fff;
-    font-size: 1.8rem;
-}
-
-.footer .container .box .info .role{
-    color:#ccc;
-    font-size: 1.5rem;
-}
-
-.footer .container .box .info .contact{
-    color: #fff;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-.footer .credits{
-    text-align: center;
-    font-size: 1rem;
-    border-top: .2rem solid var(--white);
-    color: white;
-    padding: 1rem;
-}
-
-.footer .credits span{
-    color: #6EBD8F;
-}
-
-
 /*Student page style*/
 .home-student .row{
     display: flex;
@@ -1203,7 +1123,6 @@ header .fa-bars{
     transition: .2s linear;
 }
 
-
 .dropdown details[open] summary::after{
     transform: rotate(90deg);
 }
@@ -1277,6 +1196,163 @@ header .fa-bars{
 .special-provision .box-container .box .info a:hover{
     transform: scale(1.1);
 }
+
+
+/*Country Page Style*/
+.information{
+    padding: 5rem 5rem 2rem;
+}
+
+.information h1{
+    font-size: 5rem;
+    text-align: center;
+    color: var(--steelblue);
+    font-weight: bold;
+}
+
+.information .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+
+.information .row .info{
+    flex: 1 1 40rem;
+}
+
+.information .row .info .ambassador{
+    padding: 2rem 0;
+}
+
+.information .row .info .ambassador h2{
+    font-size: 4rem;
+}
+
+.information .row .info .ambassador p{
+    font-size: 3rem;
+}
+
+.information .row .info .community{
+    padding: 2rem 0;
+}
+
+.information .row .info .community h2{
+    font-size: 3rem;
+}
+
+.information .row .info .community p{
+    font-size: 2.5rem;
+}
+
+.information .row .info h2{
+    font-size: 2.5rem;
+}
+
+.information .row .info p{
+    font-size: 2rem;
+}
+
+.information .row .info p a{
+    color: #000;
+}
+
+.information .row .map{
+    flex: 1 1 40rem;
+}
+
+.information .row .map {
+    height: 45rem;
+}
+
+.information .row .map iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*Footer Section Style*/
+.footer{
+    background: #263286;
+}
+
+.footer .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding: 3rem;
+    justify-content: space-between;
+}
+
+.footer .container .box{
+    padding:1rem 0;
+}
+
+.footer .container .box h3{
+    font-size: 2.2rem;
+    padding:.7rem 0;
+    color:#fff;
+    margin-bottom: 1rem;
+}
+
+.footer .container .box .title{
+    font-size: 2rem;
+    padding:.7rem 0;
+    color:#6EBD8F;
+    margin-bottom: 1rem;
+}
+
+.footer .container .box .place{
+    font-size: 1.5rem;
+    padding:.7rem 0;
+    color:#ccc;
+    line-height: 2;
+}
+
+.footer .container .box a{
+    display: block;
+    padding: .3rem 0;
+    font-size: 1.8rem;
+    color: white;
+}
+
+.footer .container .box a:hover{
+    display: block;
+    color: #6EBD8F;
+    text-decoration: underline;
+}
+
+.footer .container .box .info .name{
+    color:#fff;
+    font-size: 1.8rem;
+}
+
+.footer .container .box .info .role{
+    color:#ccc;
+    font-size: 1.5rem;
+}
+
+.footer .container .box .info .contact{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.footer .credits{
+    text-align: center;
+    font-size: 1rem;
+    border-top: .2rem solid var(--white);
+    color: white;
+    padding: 1rem;
+}
+
+.footer .credits span{
+    color: #6EBD8F;
+}
+
+
+
 
 
 /*Media quieries*/

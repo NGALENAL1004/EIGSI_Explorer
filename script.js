@@ -7,7 +7,7 @@ menu.addEventListener('click',function(){
 })
 
 $(window).on('scroll load',function(){
-    if($(window).scrollTop() > 60){
+    if($(window).scrollTop() > 20){
         $('header').addClass('header-active');
     }else{
         $('header').removeClass('header-active');
@@ -15,7 +15,7 @@ $(window).on('scroll load',function(){
 }});
 
 $(window).on('scroll load',function(){
-    if($(window).scrollTop() > 60){
+    if($(window).scrollTop() > 20){
         $('header-ei').addClass('header-ei-active');
     }else{
         $('header-ei').removeClass('header-ei-active');
